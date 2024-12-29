@@ -35,7 +35,7 @@ function main(start_yr::Int, stop_yr::Int, jc::Bool  = false)
         end
     end
 
-    CSV.write("$filename.csv", df)
+    CSV.write("data/$filename.csv", df)
 end
 
 main(2023, 2024, true) # jc data
